@@ -20,7 +20,7 @@ export class MoviesService {
         }
 
         console.log('Fetching movies from API');
-        const response = await this.httpService.axiosRef.get(`https://pokeapi.co/api/v2/pokemons?limit=50`);
+        const response = await this.httpService.axiosRef.get(`https://pokeapi.co/api/v2/pokemon?limit=50`);
         const pokemons = response.data;
 
         // Filter pokemons by type
